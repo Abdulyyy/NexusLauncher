@@ -39,7 +39,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          branch: buildjre8
           name: jre8-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -48,7 +47,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          branch: buildjre17-21
           name: jre17-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -57,11 +55,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          branch: buildjre17-21
           name: jre21-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
           
-
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.11"
