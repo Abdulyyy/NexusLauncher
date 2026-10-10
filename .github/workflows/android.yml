@@ -38,34 +38,29 @@ jobs:
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: build_jre.yml
-          path: app_pojavlauncher/src/main/assets/components/jre
-          workflow_conclusion: success
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre8
           name: jre8-pojav
+          path: app_pojavlauncher/src/main/assets/components/jre
 
       - name: Get JRE17
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: build_jre.yml
-          path: app_pojavlauncher/src/main/assets/components/jre-new
-          workflow_conclusion: success
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre17-21
           name: jre17-pojav
+          path: app_pojavlauncher/src/main/assets/components/jre
 
       - name: Get JRE21
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          workflow: build_jre.yml
-          path: app_pojavlauncher/src/main/assets/components/jre-21
-          workflow_conclusion: success
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
           branch: buildjre17-21
           name: jre21-pojav
+          path: app_pojavlauncher/src/main/assets/components/jre
+          
 
       - uses: gradle/actions/setup-gradle@v4
         with:
