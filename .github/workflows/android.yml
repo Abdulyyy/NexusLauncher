@@ -37,6 +37,7 @@ jobs:
       - name: Get JRE 8
         uses: dawidd6/action-download-artifact@v9
         with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
           workflow: build.yml
           path: app_pojavlauncher/src/main/assets/components/jre
           workflow_conclusion: success
@@ -45,6 +46,7 @@ jobs:
           name: jre8-pojav
 
       - name: Get JRE17
+                github_token: ${{ secrets.GITHUB_TOKEN }}
         uses: dawidd6/action-download-artifact@v9
         with:
           workflow: build.yml
@@ -55,6 +57,7 @@ jobs:
           name: jre17-pojav
 
       - name: Get JRE21
+                github_token: ${{ secrets.GITHUB_TOKEN }}
         uses: dawidd6/action-download-artifact@v9
         with:
           workflow: build.yml
