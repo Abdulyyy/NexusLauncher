@@ -38,9 +38,8 @@ jobs:
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          workflow: build.yml
-          branch: buildjre8
+          repo: PojavLauncherTeam/PojavLauncher
+          branch: v3_openjdk
           name: jre8-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -48,9 +47,8 @@ jobs:
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          workflow: build.yml
-          branch: buildjre17-21
+          repo: PojavLauncherTeam/PojavLauncher
+          branch: v3_openjdk
           name: jre17-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -58,9 +56,8 @@ jobs:
         uses: dawidd6/action-download-artifact@v9
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repo: PojavLauncherTeam/android-openjdk-build-multiarch
-          workflow: build.yml
-          branch: buildjre17-21
+          repo: PojavLauncherTeam/PojavLauncher
+          branch: v3_openjdk
           name: jre21-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
           
