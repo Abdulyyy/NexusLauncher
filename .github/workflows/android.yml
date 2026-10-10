@@ -39,6 +39,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
+          workflow: build.yml
+          branch: buildjre8
           name: jre8-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -47,6 +49,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
+          workflow: build.yml
+          branch: buildjre17-21
           name: jre17-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
 
@@ -55,6 +59,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: PojavLauncherTeam/android-openjdk-build-multiarch
+          workflow: build.yml
+          branch: buildjre17-21
           name: jre21-pojav
           path: app_pojavlauncher/src/main/assets/components/jre
           
